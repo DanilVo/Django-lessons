@@ -17,4 +17,4 @@ def archive(request, year):
     return HttpResponse(f"<h1>Articles by years</h1><p>{year}</p>")
 
 def pageNotFound(request,exception):
-    return HttpResponseNotFound('<h1>Page Not Found</h1>')
+    return HttpResponseNotFound('<h1>Page Not Found, Search again</h1>')
